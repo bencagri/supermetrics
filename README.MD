@@ -17,8 +17,8 @@ the entire code could be implemented in any modern framework, ie laravel, symfon
 #### Endpoints
 
 |  Resource | Method | Endpoint |
-|---|-------|--------|----------|
-|  All  | GET | /stats | 
+|-----------|--------|----------|
+|  All      | GET    | /stats   | 
 |  Average Character Length of Post | GET | /stats/averageCharacterLengthOfPost | 
 |  Average Posts by User per Month | GET | /stats/averagePostByUserPerMonth | 
 |  Maximum Post Length by Month | GET | /stats/maximumPostLengthByMonth | 
