@@ -31,10 +31,10 @@ class StatsController
     public function all() : ResponseInterface
     {
         try {
-            $body     = $this->statisticService->all();
+            $body = $this->statisticService->all();
             return new JsonResponse($body);
         } catch (\Exception $e) {
-            return new JsonResponse([ "code" => $e->getCode(),"error" => $e->getMessage(), 'trace' => $e->getTrace()], 500);
+            return new JsonResponse(["code" => $e->getCode(), "error" => $e->getMessage(), 'trace' => $e->getTrace()], 500);
         }
     }
 
@@ -47,10 +47,10 @@ class StatsController
     {
         try {
             $posts = $this->statisticService->getPosts();
-            $body     = $this->statisticService->getStatsByCalculator(new AverageCharacterLengthOfPost(), $posts);
+            $body = $this->statisticService->getStatsByCalculator(new AverageCharacterLengthOfPost(), $posts);
             return new JsonResponse($body);
         } catch (\Exception $e) {
-            return new JsonResponse([ "code" => $e->getCode(),"error" => $e->getMessage(), 'trace' => $e->getTrace()], 500);
+            return new JsonResponse(["code" => $e->getCode(), "error" => $e->getMessage(), 'trace' => $e->getTrace()], 500);
         }
     }
 
@@ -63,10 +63,10 @@ class StatsController
     {
         try {
             $posts = $this->statisticService->getPosts();
-            $body     = $this->statisticService->getStatsByCalculator(new AveragePostByUserPerMonth(), $posts);
+            $body = $this->statisticService->getStatsByCalculator(new AveragePostByUserPerMonth(), $posts);
             return new JsonResponse($body);
         } catch (\Exception $e) {
-            return new JsonResponse([ "code" => $e->getCode(),"error" => $e->getMessage(), 'trace' => $e->getTrace()], 500);
+            return new JsonResponse(["code" => $e->getCode(), "error" => $e->getMessage(), 'trace' => $e->getTrace()], 500);
         }
     }
 
@@ -79,10 +79,10 @@ class StatsController
     {
         try {
             $posts = $this->statisticService->getPosts();
-            $body     = $this->statisticService->getStatsByCalculator(new MaximumPostLengthByMonth(), $posts);
+            $body = $this->statisticService->getStatsByCalculator(new MaximumPostLengthByMonth(), $posts);
             return new JsonResponse($body);
         } catch (\Exception $e) {
-            return new JsonResponse([ "code" => $e->getCode(),"error" => $e->getMessage(), 'trace' => $e->getTrace()], 500);
+            return new JsonResponse(["code" => $e->getCode(), "error" => $e->getMessage(), 'trace' => $e->getTrace()], 500);
         }
     }
 
@@ -95,10 +95,10 @@ class StatsController
     {
         try {
             $posts = $this->statisticService->getPosts();
-            $body     = $this->statisticService->getStatsByCalculator(new TotalPostsPerWeek(), $posts);
+            $body = $this->statisticService->getStatsByCalculator(new TotalPostsPerWeek(), $posts);
             return new JsonResponse($body);
         } catch (\Exception $e) {
-            return new JsonResponse([ "code" => $e->getCode(),"error" => $e->getMessage(), 'trace' => $e->getTrace()], 500);
+            return new JsonResponse(["code" => $e->getCode(), "error" => $e->getMessage(), 'trace' => $e->getTrace()], 500);
         }
     }
 }

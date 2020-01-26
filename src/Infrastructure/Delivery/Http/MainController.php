@@ -27,7 +27,7 @@ class MainController
     public function index() : ResponseInterface
     {
         try {
-            $body     = [
+            $body = [
                 "endpoints" => [
                     "averageCharacterLengthOfPost" => [
                             "method" => "GET",
@@ -53,7 +53,7 @@ class MainController
             ];
             return new JsonResponse($body);
         } catch (\Exception $e) {
-            return new JsonResponse([ "code" => $e->getCode(),"error" => $e->getMessage(), 'trace' => $e->getTrace()], 500);
+            return new JsonResponse(["code" => $e->getCode(), "error" => $e->getMessage(), 'trace' => $e->getTrace()], 500);
         }
     }
 }
