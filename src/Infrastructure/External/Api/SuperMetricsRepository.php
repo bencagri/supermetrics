@@ -60,7 +60,7 @@ class SuperMetricsRepository implements ResourceRepository
     public function getToken($refresh = false)
     {
         //if token is saved, get token
-        if (is_file(CACHE_DIR. "token") && $refresh === false) {
+        if (is_file(CACHE_DIR . "token") && $refresh === false) {
             return file_get_contents(CACHE_DIR . "token");
         }
 
@@ -86,8 +86,8 @@ class SuperMetricsRepository implements ResourceRepository
     public function getPosts($page = 1)
     {
         //create array of Posts[]
-        $posts  = [];
-        $response =  $this->request("GET", "assignment/posts", ['page'  => $page]);
+        $posts = [];
+        $response = $this->request("GET", "assignment/posts", ['page'  => $page]);
         $response = json_decode($response->getBody()->getContents(), true);
         foreach ($response['data']['posts'] as $item) {
             $posts[] = new Post($item);

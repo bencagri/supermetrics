@@ -34,7 +34,7 @@ class Post
      */
     private $createdAt;
 
-    public function __construct(array $data =  [])
+    public function __construct(array $data = [])
     {
         if (!empty($data)) {
             $this->fromArray($data);

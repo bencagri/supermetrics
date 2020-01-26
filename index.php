@@ -60,18 +60,18 @@ $router   = new Router();
 $router->setStrategy($strategy);
 
 //set routes
-$router->map('GET', '/', [MainController::class,"index"]);
-$router->get('/stats/averageCharacterLengthOfPost', [StatsController::class,"averageCharacterLengthOfPost"]);
-$router->get('/stats/averagePostByUserPerMonth', [StatsController::class,"averagePostByUserPerMonth"]);
-$router->get('/stats/maximumPostLengthByMonth', [StatsController::class,"maximumPostLengthByMonth"]);
-$router->get('/stats/totalPostsPerWeek', [StatsController::class,"totalPostsPerWeek"]);
-$router->get('/stats', [StatsController::class,"all"]);
+$router->map('GET', '/', [MainController::class, "index"]);
+$router->get('/stats/averageCharacterLengthOfPost', [StatsController::class, "averageCharacterLengthOfPost"]);
+$router->get('/stats/averagePostByUserPerMonth', [StatsController::class, "averagePostByUserPerMonth"]);
+$router->get('/stats/maximumPostLengthByMonth', [StatsController::class, "maximumPostLengthByMonth"]);
+$router->get('/stats/totalPostsPerWeek', [StatsController::class, "totalPostsPerWeek"]);
+$router->get('/stats', [StatsController::class, "all"]);
 //handle request
 try {
     $request = ServerRequest::fromGlobals();
     $response = $router->dispatch($request);
     (new \Laminas\HttpHandlerRunner\Emitter\SapiEmitter())->emit($response);
-}catch (Exception $e) {
+} catch (Exception $e) {
     http_response_code(500);
     $message = json_encode([
         'error' => $e->getMessage(),
