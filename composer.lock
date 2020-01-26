@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9702ed960297b64f4480e6f19953b3c0",
+    "content-hash": "424f3faadea54495f6f8b889cff7fc24",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -1334,12 +1334,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "cf16f630f2211d388b8d254bf2ea936c232b3cb4"
+                "reference": "31fd6db84fdf3a8b003ab88d70345dd812a38d8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/cf16f630f2211d388b8d254bf2ea936c232b3cb4",
-                "reference": "cf16f630f2211d388b8d254bf2ea936c232b3cb4",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/31fd6db84fdf3a8b003ab88d70345dd812a38d8d",
+                "reference": "31fd6db84fdf3a8b003ab88d70345dd812a38d8d",
                 "shasum": ""
             },
             "require": {
@@ -1379,7 +1379,7 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2020-01-16T08:49:07+00:00"
+            "time": "2020-01-25T14:52:34+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
@@ -2493,6 +2493,8 @@
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=7.2"
+    },
     "platform-dev": []
 }

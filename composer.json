@@ -13,6 +13,7 @@
     },
     "minimum-stability": "dev",
     "require": {
+        "php": ">=7.2",
         "league/route": "dev-master",
         "league/container": "dev-master",
         "ricardofiorani/guzzle-psr18-adapter": "^1.0@dev",
