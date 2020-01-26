@@ -38,6 +38,7 @@ then point your browser to `127.0.0.1:8082`
 you need `composer`
 ```php
 composer install
+cp .env.dist .env
 php -S 127.0.0.1:8082 -t public
 ```
 
