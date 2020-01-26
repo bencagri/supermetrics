@@ -48,3 +48,7 @@ to run phpunit tests
 ```bash
 vendor/bin/phpunit
 ```
+or via docker
+```
+docker exec -it supermetrics "vendor/bin/phpunit"
+```
