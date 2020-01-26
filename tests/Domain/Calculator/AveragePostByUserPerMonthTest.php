@@ -5,7 +5,7 @@ namespace Tests\Domain\Calculator;
 use SuperMetrics\Domain\Calculator\AveragePostByUserPerMonth;
 use Tests\TestCase;
 
-class __AveragePostByUserPerMonthTest extends TestCase
+class AveragePostByUserPerMonthTest extends TestCase
 {
     public function testAverageUserPostPerMonth()
     {

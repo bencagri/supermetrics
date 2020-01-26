@@ -5,7 +5,7 @@ namespace Tests\Domain\Calculator;
 use SuperMetrics\Domain\Calculator\MaximumPostLengthByMonth;
 use Tests\TestCase;
 
-class __MaximumPostLengthByMonthTest extends TestCase
+class MaximumPostLengthByMonthTest extends TestCase
 {
     public function testMaximumPostLengthByMonth()
     {

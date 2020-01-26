@@ -25,15 +25,12 @@ class AverageCharacterLengthOfPost implements CalculatorInterface
             $tmp[$month]['sum'] += strlen($post->getMessage());
         }
 
-//        array_map(function($month, $data){
-//            $stats[$month] = $data['total'] > 0 ? round($data['sum'] / $data['total'], 2) : 0;
-//            return $stats;
-//        }, $tmp);
-
         $stats = [];
-        foreach ($tmp as $month => $data) {
+        array_walk($tmp, function ($data, $month) use (&$stats) {
             $stats[$month] = $data['total'] > 0 ? round($data['sum'] / $data['total'], 2) : 0;
-        }
+            return $stats;
+        });
+
 
         return $stats;
     }

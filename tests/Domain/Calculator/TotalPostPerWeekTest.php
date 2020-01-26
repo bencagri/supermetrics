@@ -5,7 +5,7 @@ namespace Tests\Domain\Calculator;
 use SuperMetrics\Domain\Calculator\TotalPostsPerWeek;
 use Tests\TestCase;
 
-class __TotalPostPerWeekTest extends TestCase
+class TotalPostPerWeekTest extends TestCase
 {
     public function testTotalPostPerWeek()
     {

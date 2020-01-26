@@ -5,7 +5,7 @@ namespace Tests\Domain\Calculator;
 use SuperMetrics\Domain\Calculator\AverageCharacterLengthOfPost;
 use Tests\TestCase;
 
-class __AverageCharacterLenghtOfPostTest extends TestCase
+class AverageCharacterLenghtOfPostTest extends TestCase
 {
     public function testAveragePostLengthCalculator()
     {
