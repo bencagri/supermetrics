@@ -1,5 +1,8 @@
 ## SuperMetrics Fictional Rest API Manipulation
 
+[![Travis CI](https://api.travis-ci.org/bencagri/supermetrics.svg?branch=master)](https://travis-ci.org/bencagri/supermetrics)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/bencagri/supermetrics/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/bencagri/supermetrics/?branch=master)
+[![Code Intelligence Status](https://scrutinizer-ci.com/g/bencagri/supermetrics/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
 #### Approach to assignment
 I choosed Domain Driven Design with TDD approach for extendable simple service. Meantime due to its Framework agnostic model, 
 the entire code could be implemented in any modern framework, ie laravel, symfony, yii etc. 
