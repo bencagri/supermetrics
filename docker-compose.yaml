@@ -1,0 +1,15 @@
+version: '3.5'
+services:
+  supermetrics-calculator:
+    container_name: supermetrics
+    build:
+      context: . # Use an image built from the specified dockerfile in the current directory.
+      dockerfile: .docker/Dockerfile
+    working_dir: /supermetrics
+    volumes:
+      - ./:/supermetrics
+    ports:
+      - "8082:8082"
+
+volumes:
+  supermetrics-calculator:
