@@ -26,7 +26,7 @@ class AverageCharacterLengthOfPost implements CalculatorInterface
         }
 
         $stats = [];
-        array_walk($tmp, function ($data, $month) use (&$stats) {
+        array_walk($tmp, function($data, $month) use (&$stats) {
             $stats[$month] = $data['total'] > 0 ? round($data['sum'] / $data['total'], 2) : 0;
             return $stats;
         });
